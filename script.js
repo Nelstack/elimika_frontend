@@ -5,16 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ===== PAGE LOADER =====
-  const loader = document.getElementById('page-loader');
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      loader.style.opacity = '0';
-      loader.style.transition = 'opacity 0.4s ease';
-      setTimeout(() => { loader.style.display = 'none'; }, 400);
-    }, 800);
-  });
-
   // ===== NAVBAR SCROLL =====
   const navbar = document.getElementById('navbar');
   const updateNavbar = () => {
